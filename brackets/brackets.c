@@ -6,7 +6,7 @@
 /*   By: agrumbac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/16 18:49:19 by agrumbac          #+#    #+#             */
-/*   Updated: 2017/02/16 18:49:43 by agrumbac         ###   ########.fr       */
+/*   Updated: 2017/02/23 03:45:10 by agrumbac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,15 @@ int		braclose(char *str, char c, int i, int b)
 
 int		brackets(char *str, char c)
 {
-	if (*str == 0 && c)
-		return (0);
-	else if (*str == c)
+	if (*str == c)
 		return (1);
+	else if (!*str)
+		return (0);
+	else if (*str == ')' || *str == '}' || *str == ']')
+		return (0);
 	else if (*str == '(' || *str == '{' || *str == '[')
 		return (brackets(str + 1, (*str == '(' ? ')' : *str + 2)) * \
 				brackets(str + braclose(str, *str, 1, 1), c));
-	else if (*str == ')' || *str == '}' || *str == ']')
-		return (0);
 	else
 		return (brackets(str + 1, c));
 }
