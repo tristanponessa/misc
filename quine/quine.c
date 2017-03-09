@@ -1,1 +1,1 @@
-int main(void){char *c = "int main(void){char *c = %c%s%c; printf(c, 34, c, 34);}"; printf(c, 34, c, 34);}
+void hey(char *c){printf(c, 34, c, 34);}int main(void){char *c = "void hey(char *c){printf(c, 34, c, 34);}int main(void){char *c = %c%s%c; hey(c);}"; hey(c);}
