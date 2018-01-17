@@ -8,6 +8,6 @@ cp -f .bash_profile ~/
 cp -f .vimrc ~/
 
 # Set System Preferences (available after logout + login)
-cp -f com.apple.systempreferences.plist ~/Library/Preferences/
+cp -f preferences/*.plist ~/Library/Preferences/
 
 
