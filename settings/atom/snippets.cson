@@ -1,0 +1,59 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.c, .source.cpp, .source.h, .source.cl':
+    'main':
+        'prefix': 'main'
+        'body': 'int\tmain(int ac, char **av)\n{\n\t${2:/* code */}\n\treturn (0);\n}'
+    'Function Void':
+        'prefix': 'fvoid'
+        'body': 'void\t${1:name}(${2:/* arguments */})\n{\n\t${3:/* code */}\n}'
+    'Function Int':
+        'prefix': 'fint'
+        'body': 'int\t${1:name}(${2:/* arguments */})\n{\n\t${3:/* code */}\n}'
+    'Function Char':
+        'prefix': 'fchar'
+        'body': 'char\t${1:name}(${2:/* arguments */})\n{\n\t${3:/* code */}\n}'
+    'While loop':
+        'prefix': 'while'
+        'body': 'while (${1:/* condition */})\n{\n\t${2:/* code */}\n}'
+    'If':
+        'prefix': 'if'
+        'body': 'if (${1:/* condition */})\n{\n\t${2:/* code */}\n}'
+    'If Else':
+        'prefix': 'ife'
+        'body': 'if (${1:/* condition */})\n{\n\t${2:/* code */}\n}\nelse\n{\n\t${3:/* code */}\n}\n'
+    'void':
+        'prefix': 'void'
+        'body': 'void\t'
+    'ft_printf':
+        'prefix': 'ftp'
+        'body': 'ft_printf("${1:hi}");'
+    'header gates':
+        'prefix': 'ifndef'
+        'body': '#ifndef ${1:NAME_H}\n# define ${1:NAME_H}\n\n#endif'
+    'typedef struct':
+        'prefix': 'typedef'
+        'body': 'typedef struct\t\t\ts_${1:name}\n{\n\t${2:/* values */}\n}\t\t\t\t\t\tt_${1:name};'
+    'protected function':
+        'prefix': 'protected'
+        'body': 'if (!${1:/* function */})\n\treturn (errors(${2:/* error info*/}));'

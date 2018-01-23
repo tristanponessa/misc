@@ -1,0 +1,16 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "Warm-Dark-syntax"
+    ]
+  editor:
+    showInvisibles: true
+    softTabs: false
+    softWrap: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "34efbee8-755c-4754-bb6e-5b26eb204602"
+  welcome:
+    showOnStartup: false

@@ -7,6 +7,10 @@ cp -Rf services/* ~/Library/Services
 cp -f .bash_profile ~/
 cp -f .vimrc ~/
 
+# Set Atom Settings
+cp -f atom/*.cson ~/.atom/
+cp -f atom/*.less ~/.atom/
+
 # Set System Preferences (available after logout + login)
 cp -f preferences/*.plist ~/Library/Preferences/
 
