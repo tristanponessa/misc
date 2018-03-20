@@ -6,6 +6,7 @@ alias gs='git status'
 alias gadd='git add'
 alias gcm='git commit -m'
 alias gcamd='git commit --amend'
+alias gb='git branch'
 
 alias cdhub='cd /Users/agrumbac/Documents/github'
 

@@ -57,3 +57,9 @@
     'protected function':
         'prefix': 'protected'
         'body': 'if (!${1:/* function */})\n\treturn (errors(${2:/* error info*/}));'
+    'define':
+        'prefix': 'def'
+        'body': '# define ${1:SOMETHING}\t\t\t${2:/*SOME VALUE*/}'
+    'class':
+        'prefix': 'cl'
+        'body': 'class ${1:NAME} {\n\nprivate:\n\t${2:/* data */}\n\npublic:\n\t${1:NAME} (${3:args});\n\t~${1:NAME} ();\n}'
