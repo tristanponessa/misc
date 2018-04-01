@@ -1,4 +1,8 @@
 "*":
+  "activate-power-mode":
+    plugins:
+      playAudio: true
+      screenShake: true
   core:
     telemetryConsent: "no"
     themes: [
@@ -12,5 +16,9 @@
     tabLength: 4
   "exception-reporting":
     userId: "34efbee8-755c-4754-bb6e-5b26eb204602"
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
   welcome:
     showOnStartup: false
