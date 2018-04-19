@@ -62,4 +62,4 @@
         'body': '# define ${1:SOMETHING}\t\t\t${2:/*SOME VALUE*/}'
     'class':
         'prefix': 'cl'
-        'body': 'class ${1:NAME} {\n\npublic:\n\n\t${1:NAME}( void );\n\t${1:NAME}( ${2:std::string const & name} );\n\t${1:NAME}( ${1:NAME} const & src );\n\t~${1:NAME}();\n\n\t${1:NAME} &\t\t\toperator=( ${1:NAME} const & rhs );\n\nprivate:\n\n\t${3:/* data */}\n\n};\n\n\nstd::ostream &\t\toperator<<( std::ostream & o, ${1:NAME} const & i );\n\n'
+        'body': 'class ${1:NAME} {\n\npublic:\n\n\t${1:NAME}( void );\n\t${1:NAME}( ${2:std::string const & name} );\n\t${1:NAME}( ${1:NAME} const & src );\n\tvirtual ~${1:NAME}();\n\n\t${1:NAME} &\t\t\toperator=( ${1:NAME} const & rhs );\n\nprivate:\n\n\t${3:/* data */}\n\n};\n\n\nstd::ostream &\t\toperator<<( std::ostream & o, ${1:NAME} const & i );\n\n'

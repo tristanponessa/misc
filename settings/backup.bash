@@ -11,6 +11,9 @@ cp -Rf ~/Library/Services/Launch\ System\ Preferences.workflow services/
 cp -f ~/.bash_profile .
 cp -f ~/.vimrc .
 
+# Global gitignore
+cp -f ~/.gitignore_global .
+
 # Set Atom Settings
 cp -f ~/.atom/*.cson atom/
 cp -f ~/.atom/*.less atom/

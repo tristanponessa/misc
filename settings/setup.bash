@@ -7,6 +7,9 @@ cp -Rf services/* ~/Library/Services
 cp -f .bash_profile ~/
 cp -f .vimrc ~/
 
+# Set Global gitignore
+cp -f .gitignore_global ~/
+
 # Set Atom Settings
 cp -f atom/*.cson ~/.atom/
 cp -f atom/*.less ~/.atom/
