@@ -7,9 +7,11 @@ cp -Rf ~/Library/Services/Launch\ Terminal.workflow services/
 cp -Rf ~/Library/Services/Launch\ Atom.workflow services/
 cp -Rf ~/Library/Services/Launch\ System\ Preferences.workflow services/
 
-# Set Run Commands files for vim and bash
+# Set Run Commands files for vim bash lldb git
 cp -f ~/.bash_profile .
 cp -f ~/.vimrc .
+cp -f ~/.lldbinit .
+cp -f ~/.gitconfig .
 
 # Global gitignore
 cp -f ~/.gitignore_global .

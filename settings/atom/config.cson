@@ -6,6 +6,9 @@
   core:
     disabledPackages: [
       "activate-power-mode"
+      "language-latex"
+      "latex-completions"
+      "latex"
     ]
     telemetryConsent: "no"
     themes: [

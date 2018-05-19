@@ -1,7 +1,9 @@
+# ls
 alias l='ls -Gh'
 alias ll='ls -lGh'
 alias la='ls -lGah'
 
+# git
 alias gs='git status'
 alias gadd='git add'
 alias gcm='git commit -m'
@@ -10,13 +12,21 @@ alias gb='git branch'
 alias cherry='git cherry-pick'
 alias gckt='git checkout'
 
+# cd
 alias cdhub='cd /Users/agrumbac/Documents/github'
 alias cdvog='cd /Users/agrumbac/Documents/vog'
 
+# grep
+alias ungrep='grep -v'
+
+# brew
 alias brew='$HOME/homebrew/bin/brew'
 
 # atom
 alias atom='open -a atom'
+
+# latex
+alias pdflatex='/Library/TeX/Root/bin/x86_64-darwin/pdflatex'
 
 # git config
 git config --global user.email "agrumbac@student.42.fr"
@@ -28,6 +38,7 @@ export PATH=$PATH:~/homebrew/bin
 
 # free
 alias free='rm -rf ~/Library/*42_cache* &&  df -h ~'
+alias used='du -d1 -h'
 
 # the fuck is that
 fuck () {

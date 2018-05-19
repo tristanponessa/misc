@@ -3,9 +3,11 @@
 # Set App Launch Services
 cp -Rf services/* ~/Library/Services
 
-# Set Run Commands files for vim and bash
+# Set Run Commands files for vim bash lldb git
 cp -f .bash_profile ~/
 cp -f .vimrc ~/
+cp -f .lldbinit ~/
+cp -f .gitconfig ~/
 
 # Set Global gitignore
 cp -f .gitignore_global ~/

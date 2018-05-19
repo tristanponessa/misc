@@ -1,0 +1,6 @@
+[user]
+	email = agrumbac@student.42.fr
+	name = grumbach
+[core]
+	excludesfile = /Users/agrumbac/.gitignore_global
+	editor = vim
