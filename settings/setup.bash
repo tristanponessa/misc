@@ -17,6 +17,9 @@ cp -f atom/*.cson ~/.atom/
 cp -f atom/*.less ~/.atom/
 
 # Set System Preferences (available after logout + login)
-cp -f preferences/*.plist ~/Library/Preferences/
+cp -f Preferences/*.plist ~/Library/Preferences/
 
+# Enable keyboard ludicrous mode
+defaults write -g KeyRepeat -int 1
+defaults write -g InitialKeyRepeat -float 8.5
 

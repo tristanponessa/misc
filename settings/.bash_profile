@@ -2,6 +2,7 @@
 alias l='ls -Gh'
 alias ll='ls -lGh'
 alias la='ls -lGah'
+alias p='pwd'
 
 # git
 alias gs='git status'
@@ -15,6 +16,9 @@ alias gckt='git checkout'
 # cd
 alias cdhub='cd /Users/agrumbac/Documents/github'
 alias cdvog='cd /Users/agrumbac/Documents/vog'
+mc () {
+	mkdir -p $1 && cd $1
+}
 
 # grep
 alias ungrep='grep -v'
@@ -23,7 +27,7 @@ alias ungrep='grep -v'
 alias brew='$HOME/homebrew/bin/brew'
 
 # atom
-alias atom='open -a atom'
+atom () { for i; do touch $i && open -a atom $i; done; }
 
 # latex
 alias pdflatex='/Library/TeX/Root/bin/x86_64-darwin/pdflatex'

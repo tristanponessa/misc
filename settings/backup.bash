@@ -28,5 +28,8 @@ cp -f ~/Library/Preferences/com.apple.systempreferences.plist preferences/
 cp -f ~/Library/Preferences/com.github.atom.helper.plist preferences/
 cp -f ~/Library/Preferences/com.github.atom.plist preferences/
 cp -f ~/Library/Preferences/com.google.Chrome.plist preferences/
-
+cp -f ~/Library/Preferences/com.apple.driver.AppleHIDMouse.plist preferences/
+cp -f ~/Library/Preferences/com.apple.loginitems.plist preferences/
+cp -f ~/Library/Preferences/com.apple.menuextra.clock.plist preferences/
+cp -f ~/Library/Preferences/com.apple.screensaver.plist preferences/
 
