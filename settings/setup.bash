@@ -23,3 +23,6 @@ cp -f Preferences/*.plist ~/Library/Preferences/
 defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -float 8.5
 
+# Set wallpaper
+open SetWallpaper.app
+
