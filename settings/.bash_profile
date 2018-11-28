@@ -38,7 +38,7 @@ git config --global user.name "grumbach"
 git config --global core.excludesfile ~/.gitignore_global
 
 # homebrew path
-export PATH=$PATH:~/homebrew/bin
+export PATH=~/homebrew/bin:$PATH
 
 # free
 alias free='rm -rf ~/Library/*42_cache* &&  df -h ~'
@@ -59,3 +59,8 @@ fuck () {
     test -n "$TF_CMD" && print -s $TF_CMD
 }
 
+# Project init
+alias init='/Users/agrumbac/Documents/github/project_init/project_init.bash'
+
+# Linux
+alias linux='ssh ubuntu@35.180.5.48 -i /Users/agrumbac/Documents/my_stuff/linux/agrum_key.pem'
