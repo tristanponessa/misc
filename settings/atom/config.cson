@@ -1,36 +1,3 @@
 "*":
-  "activate-power-mode":
-    plugins:
-      playAudio: true
-      screenShake: true
-  core:
-    disabledPackages: [
-      "activate-power-mode"
-      "language-latex"
-      "latex-completions"
-      "latex"
-    ]
-    telemetryConsent: "no"
-    themes: [
-      "one-dark-ui"
-      "Warm-Dark-syntax"
-    ]
-  editor:
-    showInvisibles: true
-    softTabs: false
-    softWrap: true
-    tabLength: 4
   "exception-reporting":
-    userId: "34efbee8-755c-4754-bb6e-5b26eb204602"
-  minimap:
-    plugins:
-      "find-and-replace": true
-      "find-and-replaceDecorationsZIndex": 0
-      "git-diff": true
-      "git-diffDecorationsZIndex": 0
-      pigments: true
-      pigmentsDecorationsZIndex: 0
-      selection: true
-      selectionDecorationsZIndex: 0
-  welcome:
-    showOnStartup: false
+    userId: "ccad446d-1efc-4028-92c8-0d2211acd2fb"
